@@ -37,12 +37,15 @@ function displayResults(response) {
           ? response.animals[i].description
           : getDefaultDescription()
       } </p>
-      </li>
            <div>
-        <button id="${response.animals[i].id}">More Info</button>
+        <button class="moreInfo" id="${
+          response.animals[i].id
+        }">Primay Breed Info</button>
+   
+        <a href=${response.animals[i].url} target="_blank">Adopt ME!</a>
             </div>
-          <div id=results${response.animals[i].id}>
-          </div>
+          <div id=results${response.animals[i].id}> 
+
     </li>`
     );
   }
@@ -142,7 +145,7 @@ function displayWiki(wikiData, id) {
 }
 
 function watchResults() {
-  $("button").click(function () {
+  $(".moreInfo").click(function () {
     let id = this.id;
     console.log(id); // or alert($(this).attr('id'));
     // $(`#breed${id}`).text()
