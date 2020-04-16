@@ -1,18 +1,64 @@
 * {
   box-sizing: border-box;
+  font-family: "Baloo Paaji 2", cursive;
+  margin: 0;
 }
 
 body {
   font-family: "Roboto", sans-serif;
+  background-color: whitesmoke;
+}
+main {
+  text-align: center;
+}
+h1 {
+  padding: 100px;
+}
+
+h3 {
+  padding: 25px;
+}
+#js-form {
+  border: 5px solid hotpink;
+  border-radius: 1%;
+  display: inline-block;
+  padding-bottom: 50px;
 }
 
 button,
 input[type="text"] {
   padding: 5px;
+
+}
+.petHeader {
+  width: 35%;
+  min
 }
 
-button:hover {
+.wiki{
+  
+}
+.container {
+  display: flex;
+  margin: 20px;
+  border: 2px solid black;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.button {
+  margin: 25px;
+  font-size: large;
+  border-radius: 15%;
+  border-style: solid;
+  background-color: black;
+  color: white;
+  padding: 20px;
+}
+
+.button:hover {
   cursor: pointer;
+  background-color: gray;
 }
 
 ul {
@@ -23,11 +69,6 @@ ul {
 
 li {
   padding: 10px;
-}
-
-.container {
-  max-width: 1000px;
-  margin: 0 auto;
 }
 
 .error-message {

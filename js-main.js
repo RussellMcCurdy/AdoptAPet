@@ -38,14 +38,14 @@ function displayResults(response) {
           : getDefaultDescription()
       } </p>
            <div>
-        <button class="moreInfo" id="${
+        <button class="moreInfo button" id="${
           response.animals[i].id
         }">Primay Breed Info</button>
-   
-        <a href=${response.animals[i].url} target="_blank">Adopt ME!</a>
-            </div>
-          <div id=results${response.animals[i].id}> 
-
+   <button title="button title" class="button" onclick=" window.open('${
+     response.animals[i].url
+   }', '_blank'); return false;">More info about me!</button>
+          <div class="wiki" id=results${response.animals[i].id}> 
+        </div>
     </li>`
     );
   }
