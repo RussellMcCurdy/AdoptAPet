@@ -139,7 +139,7 @@ function displayWiki(wikiData, id) {
     </li>
     <li>
     <p>${data.extract ? data.extract : getDefaultWiki()}</p>
-    <a href="https://en.wikipedia.org/?curid=${pageID}" target="_blank"> ORE info on this breed...</a>
+    <a href="https://en.wikipedia.org/?curid=${pageID}" target="_blank"> MORE info on this breed...</a>
       </li>`
   );
 }
