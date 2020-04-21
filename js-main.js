@@ -52,11 +52,11 @@ function displayResults(response) {
   $("#results").removeClass("hidden");
   watchResults();
 }
-
+//catches error if there is no image in the json
 function getDefaultImage() {
   return "dog-1532627_640.png";
 }
-
+//catches error if there is no description in the json
 function getDefaultDescription() {
   return "No description. Please click the link below to get more info.";
 }
@@ -114,6 +114,7 @@ function getPets(zip, type, breed, limit = 50) {
     });
 }
 
+//calls the wiki API
 function getWikiPets(breed, id) {
   let searchURL = wikiURL + breed;
   fetch(searchURL)
@@ -129,6 +130,7 @@ function getWikiPets(breed, id) {
     });
 }
 
+//displays wiki data
 function displayWiki(wikiData, id) {
   let pageID = Object.keys(wikiData.query.pages)[0];
   let data = wikiData.query.pages[pageID];
@@ -143,6 +145,7 @@ function displayWiki(wikiData, id) {
       </li>`
   );
 }
+//catches error if wiki returns no data
 function getDefaultWiki() {
   return "Please click the More Info on this Breed Button";
 }
