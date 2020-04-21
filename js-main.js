@@ -138,12 +138,14 @@ function displayWiki(wikiData, id) {
     <h2>${data.title}
     </li>
     <li>
-    <p>${data.extract}</p>
-    <a href="https://en.wikipedia.org/?curid=${pageID}" target="_blank">Even MORE info on this breed...</a>
+    <p>${data.extract ? data.extract : getDefaultWiki()}</p>
+    <a href="https://en.wikipedia.org/?curid=${pageID}" target="_blank"> ORE info on this breed...</a>
       </li>`
   );
 }
-
+function getDefaultWiki() {
+  return "Please click the More Info on this Breed Button";
+}
 function watchResults() {
   $(".moreInfo").click(function () {
     let id = this.id;
