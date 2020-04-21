@@ -4,7 +4,7 @@ Live Link: https://russellmccurdy.github.io/apicapstone/
 
 Sections:
 First Page:  
-![results](first page.png)
+![firstpage](firstpage.png)
 Enter the Zip to search for adoptable pets near you
 You may also enter the type of pet you are looking for..dog, cat, hamster, etc.
 Or the user can search by breed.
