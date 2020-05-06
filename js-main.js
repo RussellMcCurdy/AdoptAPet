@@ -148,7 +148,7 @@ function displayWikiError(id) {
     <h2>We're sorry</h2>
     </li>
     <li>
-    <p>We have no info on this breed at this time.  Please click <b>More info about me!</b> to find out more about this aweomse pet</p>
+    <p>We have no info on this breed at this time.  Please click the \"<b>More info about me!</b>\" button to find out more about this awesome pet</p>
       </li>`
   );
 }
