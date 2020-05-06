@@ -1,64 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="main.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&display=swap"
-      rel="stylesheet"
-    />
-    <title>Adopt a Pet!</title>
-  </head>
-  <body>
-    <main>
-      <div class="container">
-        <img
-          class="petHeader"
-          src="cat-2934720_1920.jpg"
-          alt="photo of a cat"
-        />
-        <h1>Welcome to adopt a pet!</h1>
-        <img class="petHeader" src="pug-690566_1920.jpg" alt="" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+Paaji+2:wght@500&display=swap" rel="stylesheet" />
+  <title>Adopt a Pet!</title>
+</head>
+
+<body>
+  <main>
+    <header class="container">
+      <img class="petHeader" src="cat-2934720_1920.jpg" alt="photo of a cat" />
+      <h1>Welcome to adopt a pet!</h1>
+      <img class="petHeader" src="pug-690566_1920.jpg" alt="" />
+    </header>
+    <form id="js-form">
+      <h3>Fill out the fields below to find your pet.</h3>
+      <div id="error"></div>
+      <label for="zipCode">Please enter a Zip Code</label><br />
+      <input type="text" name="search-term" id="zipCode" placeholder="78745" required />
+      <div>
+        <label for="type">Type of pet (optional)</label><br />
+        <input type="text" name="search-term" id="type" placeholder='"Dog"' />
       </div>
-      <form id="js-form">
-        <h3>Fill out the fields below to find your pet.</h3>
-        <label for="locationSearch">Please enter a Zip Code</label><br />
-        <input
-          type="text"
-          name="search-term"
-          id="zipCode"
-          placeholder="78745"
-          required
-        />
-        <div>
-          <label for="max-results">Type of pet (optional)</label><br />
-          <input type="text" name="search-term" id="type" placeholder='"Dog"' />
-        </div>
-        <div>
-          <label for="max-results">breed (optional)</label><br />
-          <input
-            type="text"
-            name="search-term"
-            id="breed"
-            placeholder='"Beagle'
-          />
-        </div>
-        <div>
-          <input class="button" type="submit" value="Search" id="submit" />
-        </div>
-      </form>
-      <p id="js-error-message" class="error-message"></p>
-      <section id="results" class="hidden">
-        <h2>Search results</h2>
-        <ul id="results-list"></ul>
-      </section>
-    </main>
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.js"
-      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-      crossorigin="anonymous"
-    ></script>
-    <script src="js-main.js"></script>
-  </body>
+      <div>
+        <label for="breed">breed (optional)</label><br />
+        <input type="text" name="search-term" id="breed" placeholder='"Beagle"' />
+      </div>
+      <div>
+        <input class="button" type="submit" value="Search" id="submit" />
+      </div>
+    </form>
+    <section id="results" class="hidden">
+      <h2>Search results</h2>
+      <ul id="results-list"></ul>
+    </section>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous"></script>
+  <script src="js-main.js"></script>
+</body>
+
 </html>

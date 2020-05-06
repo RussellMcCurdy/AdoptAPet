@@ -15,10 +15,23 @@ main {
 }
 h1 {
   padding: 100px;
+  width: 33.3%;
+}
+
+h2 {
+  font-size: 36px;
+  text-decoration: underline;
 }
 
 h3 {
-  padding: 25px;
+  font-size: 24px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name {
+  font-size: 30px;
 }
 #js-form {
   border-radius: 1%;
@@ -27,7 +40,7 @@ h3 {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
-  width: 1200px;
+  width: 1000px;
 }
 
 button,
@@ -35,8 +48,8 @@ input[type="text"] {
   padding: 5px;
 }
 .petHeader {
-  width: 35%;
-  min-width: 400px;
+  width: 33.3%;
+  min-width: 500px;
 }
 
 .wiki {
@@ -44,17 +57,20 @@ input[type="text"] {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
-  min-width: 1000px;
+  min-width: 200px;
 }
+
 .container {
   display: flex;
   margin: 20px;
-  width: 70%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
   border: 5px solid black;
   min-width: 1200px;
+  justify-content: space-around;
 }
+
 .button {
   margin: 25px;
   font-size: large;
@@ -65,6 +81,20 @@ input[type="text"] {
   padding: 20px;
 }
 
+.moreInfo {
+  margin: 25px;
+  font-size: large;
+  border-radius: 15%;
+  border-style: solid;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.breed {
+  color: darkblue;
+}
 .button:hover {
   cursor: pointer;
   background-color: gray;
@@ -89,4 +119,65 @@ li {
 }
 form {
   width: 80%;
+}
+
+.description {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 200px;
+}
+
+@media screen and (max-width: 1593px) {
+ .petHeader{
+   width: 33.3%;
+   min-width: 200px;
+   
+ }
+ .container{
+   min-width:320px;
+ }
+
+h1 {
+  font-size: 24px;
+  padding: 10px;
+  width: 33.3%;
+}
+
+#js-form {
+width: 100%;
+min-width: 320px;
+}
+
+@media screen and (max-width: 700px){
+.petHeader {
+    display: none;
+  }
+
+h1 {
+    font-size: 18px;
+  }
+
+#js-form {
+width: 100%;
+min-width: 320px;
+}
+
+.button, .moreInfo {
+  font-size: small;
+  margin: 5px;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.wiki {
+  width: 90%;
+  font-size: 12px;
+}
+h2 {
+  padding: 0px;
+}
+.animalPic {
+  width: 80%;
+  min-width: 200px;
 }
